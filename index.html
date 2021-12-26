@@ -1,1 +1,140 @@
-"Hello World!" 
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      div {
+        font-family: Arial, "Microsoft Yahei", "微软雅黑";
+      }
+      .card {
+        height: 618px;
+        width: 800px;
+        background-image: linear-gradient(
+          to bottom right,
+          /* #cc3386,
+                    #6648e1 */ #ff7a4a,
+          #bc2ce0
+        );
+      }
+      img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        position: absolute;
+        top: 25px;
+        left: 325px;
+        /* width / 2 + left = 400, height / 2 + top = 100 */
+      }
+      #blank {
+        background-color: #ffffff;
+        height: 470px;
+        width: 700px;
+        position: absolute;
+        left: 50px;
+        top: 100px;
+        border-radius: 15px;
+        box-shadow: 10px 10px 20px #911d5f;
+      }
+      #circle {
+        /* background-color: #6a2db4; */
+        background-color: #f46e62;
+        width: 165px;
+        height: 165px;
+        border-radius: 50%;
+        position: absolute;
+        top: 17.5px;
+        left: 317.5px;
+        opacity: 0.5;
+        box-shadow: 0px 10px 25px #ca5e54;
+      }
+      .text-container {
+        position: absolute;
+        left: 0px;
+        right: 0px;
+        top: 100px;
+        color: #324e63;
+      }
+      .welcome {
+        color: #f36457;
+        font-size: 28px;
+        font-weight: 700;
+        text-align: center;
+      }
+      .culture {
+        text-align: center;
+        position: relative;
+        top: 40px;
+        font-size: 18px;
+        font-weight: 700;
+      }
+      .time {
+        text-align: center;
+        position: relative;
+        top: 80px;
+        font-size: 20px;
+        font-weight: 700;
+      }
+      .icon {
+        width: 45px;
+        height: 45px;
+        position: absolute;
+        top: -10px;
+        left: 245px;
+      }
+      .fortune {
+        position: absolute;
+        left: 172px;
+        top: 230px;
+        color: #324e63;
+        text-align: center;
+      }
+      .like {
+        position: absolute;
+        left: 472px;
+        top: 230px;
+        color: #324e63;
+        text-align: center;
+      }
+      .info-title {
+        font-size: 18px;
+        margin-top: 2px;
+      }
+      .info-content {
+        font-weight: 700;
+        font-size: 26px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div id="blank">
+        <div class="text-container">
+          <div class="welcome">下午好，username</div>
+          <div class="culture">
+            不是春风初生，春林初盛，春风十里不如你；而是遇见你，微风起，新柳生绿意，蜂蝶翻飞花丛里，眼上眉梢皆是喜
+          </div>
+          <div class="time">
+            <img src="./src/clock.jpg" alt="" class="icon" />2021.08.28
+          </div>
+          <div class="fortune">
+            <div class="info-content">70</div>
+            <div class="info-title">今日运势</div>
+          </div>
+          <div class="like">
+            <div class="info-content">+5</div>
+            <div class="info-title">好感度</div>
+          </div>
+        </div>
+      </div>
+      <div id="circle"></div>
+      <img src="https://q1.qlogo.cn/g?b=qq&nk=826119794&s=640" alt="" />
+    </div>
+  </body>
+</html>
